@@ -1,9 +1,9 @@
 {
   "name": "Aha_CustomControl",
   "version": "0.1.0",
-  "summary": "A short description of Aha_CustomControl.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/hoangson11592@gmail.com/Aha_CustomControl",
+  "summary": "Aha_CustomControl is a cocoapod for Aha applications",
+  "description": "Aha_CustomControl is created by Aha developers.\nNeed to be shared.",
+  "homepage": "https://github.com/son11592/Aha_CustomControl.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,22 @@
     "hoangson11592@gmail.com": "hoangson11592@gmail.com"
   },
   "source": {
-    "git": "https://github.com/hoangson11592@gmail.com/Aha_CustomControl.git",
+    "git": "https://github.com/son11592/Aha_CustomControl.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "Aha_CustomControl/Classes/**/*"
+  "source_files": "Aha_CustomControl/Classes/**/*",
+  "dependencies": {
+    "DynamicColor": [
+      "~> 4.0.2"
+    ],
+    "NibDesignable": [
+      "~> 3.0.0"
+    ],
+    "Localize-Swift": [
+      "~> 2.0.0"
+    ]
+  }
 }

@@ -1,5 +1,11 @@
 PODS:
-  - Aha_CustomControl (0.1.0)
+  - Aha_CustomControl (0.1.0):
+    - DynamicColor (~> 4.0.2)
+    - Localize-Swift (~> 2.0.0)
+    - NibDesignable (~> 3.0.0)
+  - DynamicColor (4.0.2)
+  - Localize-Swift (2.0.0)
+  - NibDesignable (3.0.0)
 
 DEPENDENCIES:
   - Aha_CustomControl (from `../`)
@@ -9,7 +15,10 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  Aha_CustomControl: 5b7f2ae6016fae2b5eb3be796cdd35978fe5c2e0
+  Aha_CustomControl: 5f8090cd69a9b94514c88f20a899c9aa08749cb4
+  DynamicColor: c7adcfe871781a2b39877a5774e452ba51b79eb3
+  Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
+  NibDesignable: 6ccf1e54135cb05be0a78f803b9a8d78125a7d6d
 
 PODFILE CHECKSUM: d02d1342676aebfb85ebcf4c062091ef427ae61e
 

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BottomButtonNoText" customModule="AhaFood" customModuleProvider="target">
+            <connections>
+                <outlet property="_dotTop" destination="Dbk-yf-moj" id="0jF-XK-WPF"/>
+                <outlet property="_dotTrailing" destination="bHX-7e-WOg" id="uyN-et-xO9"/>
+                <outlet property="_dotWidth" destination="8rz-2h-PEw" id="NZJ-gC-WD2"/>
+                <outlet property="dotIcon" destination="gaS-KL-7WG" id="Osr-fo-HGd"/>
+                <outlet property="imageButton" destination="TUb-jR-HFd" id="nAp-8p-k78"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y7i-Qr-Uc4" customClass="UIControl">
+                    <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
+                    <subviews>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUb-jR-HFd" customClass="DOFavoriteButton" customModule="AhaFood" customModuleProvider="target">
+                            <rect key="frame" x="8" y="8" width="46.5" height="46.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="TUb-jR-HFd" secondAttribute="height" multiplier="1:1" id="t2Q-Z9-XmW"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="imageColorOn">
+                                    <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="imageColorOff">
+                                    <color key="value" red="0.50196078431372548" green="0.51764705882352935" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="image" keyPath="image" value="notifications_icon"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Up3-LC-XiQ" userLabel="Fake View">
+                            <rect key="frame" x="0.0" y="0.0" width="12" height="12"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dot_icon" translatesAutoresizingMaskIntoConstraints="NO" id="gaS-KL-7WG">
+                            <rect key="frame" x="42.5" y="8" width="12" height="12"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="12" id="8rz-2h-PEw"/>
+                                <constraint firstAttribute="width" secondItem="gaS-KL-7WG" secondAttribute="height" multiplier="1:1" id="K7F-YS-hVT"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="TUb-jR-HFd" firstAttribute="centerX" secondItem="y7i-Qr-Uc4" secondAttribute="centerX" id="931-Dc-tvJ"/>
+                        <constraint firstItem="gaS-KL-7WG" firstAttribute="top" secondItem="TUb-jR-HFd" secondAttribute="top" id="Dbk-yf-moj"/>
+                        <constraint firstItem="TUb-jR-HFd" firstAttribute="trailing" secondItem="gaS-KL-7WG" secondAttribute="trailing" id="bHX-7e-WOg"/>
+                        <constraint firstItem="TUb-jR-HFd" firstAttribute="height" secondItem="y7i-Qr-Uc4" secondAttribute="height" multiplier="3:4" id="vL5-Ex-2df"/>
+                        <constraint firstItem="TUb-jR-HFd" firstAttribute="centerY" secondItem="y7i-Qr-Uc4" secondAttribute="centerY" id="weP-ZA-sQt"/>
+                    </constraints>
+                    <connections>
+                        <action selector="onTouch:" destination="-1" eventType="touchUpInside" id="4YM-uZ-5Qg"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="y7i-Qr-Uc4" secondAttribute="bottom" id="0Iu-TY-H8Y"/>
+                <constraint firstAttribute="trailing" secondItem="y7i-Qr-Uc4" secondAttribute="trailing" id="6ez-aU-Wn2"/>
+                <constraint firstItem="y7i-Qr-Uc4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HG1-Ur-FKw"/>
+                <constraint firstItem="y7i-Qr-Uc4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZqW-e6-7no"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dot_icon" width="24" height="24"/>
+        <image name="notifications_icon" width="24" height="24"/>
+    </resources>
+</document>
