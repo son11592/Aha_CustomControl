@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Aha_CustomControl_Example' do
+  pod 'Aha_CustomControl', :path => '../'
+
+  target 'Aha_CustomControl_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
