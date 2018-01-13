@@ -9,26 +9,27 @@
 import UIKit
 import DynamicColor
 import NibDesignable
+import Localize_Swift
 
 @IBDesignable
-class BottomButton: NibDesignable {
+open class BottomButton: NibDesignable {
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    @IBOutlet weak var imageButton: DOFavoriteButton!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet var dotIcon: UIImageView!
+    @IBOutlet open weak var imageButton: DOFavoriteButton!
+    @IBOutlet open weak var titleLabel: UILabel!
+    @IBOutlet open var dotIcon: UIImageView!
     
-    var touch:(()->())?
+    open var touch:(()->())?
     
     
-    @IBInspectable var title: String? = "Title" {
+    @IBInspectable open var title: String? = "Title" {
         didSet {
             self.titleLabel.text = title?.localized()
         }
@@ -40,7 +41,7 @@ class BottomButton: NibDesignable {
         }
     }
     
-    @IBInspectable var isActive: Bool = true {
+    @IBInspectable open var isActive: Bool = true {
         didSet {
             updateImage()
             updateLabel()
@@ -66,13 +67,13 @@ class BottomButton: NibDesignable {
     }
     
     // MARK: Interface Builder
-    override public func prepareForInterfaceBuilder() {
+    override open func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
     }
     
     //MARK: - IBAction
     
-    @IBAction func onTouch(_ sender: Any) {
+    @IBAction open func onTouch(_ sender: Any) {
         if let _touch = self.touch {
             _touch()
         }

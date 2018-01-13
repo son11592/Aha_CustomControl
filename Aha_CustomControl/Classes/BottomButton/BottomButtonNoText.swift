@@ -11,24 +11,24 @@ import DynamicColor
 import NibDesignable
 
 @IBDesignable
-class BottomButtonNoText: NibDesignable {
+open class BottomButtonNoText: NibDesignable {
 
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    @IBOutlet weak var imageButton: DOFavoriteButton!
-    @IBOutlet var dotIcon: UIImageView!
+    @IBOutlet open weak var imageButton: DOFavoriteButton!
+    @IBOutlet open var dotIcon: UIImageView!
 
-    @IBOutlet var _dotWidth: NSLayoutConstraint!
-    @IBOutlet weak var _dotTrailing: NSLayoutConstraint!
-    @IBOutlet weak var _dotTop: NSLayoutConstraint!
+    @IBOutlet open var _dotWidth: NSLayoutConstraint!
+    @IBOutlet open weak var _dotTrailing: NSLayoutConstraint!
+    @IBOutlet open weak var _dotTop: NSLayoutConstraint!
     
-    @IBInspectable public var dotTrailing: CGFloat {
+    @IBInspectable open var dotTrailing: CGFloat {
         set {
             _dotTrailing.constant = newValue
             layoutIfNeeded()
@@ -38,7 +38,7 @@ class BottomButtonNoText: NibDesignable {
         }
     }
 
-    @IBInspectable public var doTop: CGFloat {
+    @IBInspectable open var doTop: CGFloat {
         set {
             _dotTop.constant = newValue
             layoutIfNeeded()
@@ -48,7 +48,7 @@ class BottomButtonNoText: NibDesignable {
         }
     }
 
-    @IBInspectable public var dotWidth: CGFloat {
+    @IBInspectable open var dotWidth: CGFloat {
         set {
             _dotWidth.constant = newValue
             layoutIfNeeded()
@@ -58,7 +58,7 @@ class BottomButtonNoText: NibDesignable {
         }
     }
     
-    override func awakeFromNib() {
+    open override func awakeFromNib() {
         super.awakeFromNib()
         
         imageButton.imageColorOn = UIColor(hexString: "#F05522")
@@ -67,7 +67,7 @@ class BottomButtonNoText: NibDesignable {
         imageButton.imageColorOff = UIColor(hexString: "#C2C4CA")
     }
     
-    var touchBlock:(()->())?
+    open var touchBlock:(()->())?
     
     @IBInspectable open var image: UIImage! {
         didSet {
@@ -77,7 +77,7 @@ class BottomButtonNoText: NibDesignable {
         }
     }
     
-    @IBInspectable var isActive: Bool = true {
+    @IBInspectable open var isActive: Bool = true {
         didSet {
             updateImage()
         }
@@ -96,14 +96,14 @@ class BottomButtonNoText: NibDesignable {
     }
     
     // MARK: Interface Builder
-    override public func prepareForInterfaceBuilder() {
+    override open func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         self.imageButton.image = UIImage(named: "notifications_icon")
     }
     
     //MARK: - IBAction
     
-    @IBAction func onTouch(_ sender: Any) {
+    @IBAction open func onTouch(_ sender: Any) {
         touchBlock?()
     }
 

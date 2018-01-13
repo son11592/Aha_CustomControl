@@ -10,7 +10,7 @@ import Foundation
 import CoreGraphics
 import UIKit
 
-protocol BaseVCProtocol {
+public protocol BaseVCProtocol {
     
     func customInitLayout()
     func updateScaling()
