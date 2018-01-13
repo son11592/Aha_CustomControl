@@ -1,0 +1,712 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06700C9C645BAC30895E862AD09D68CB /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06146623B101C497AC0AF77C6AF4296E /* ReplaceMe.swift */; };
+		1F2984AEACA85F8E3F746C130861AF82 /* Pods-Aha_CustomControl_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DABFB152E30B45212C8C0E9132EE31 /* Pods-Aha_CustomControl_Tests-dummy.m */; };
+		2C962D15AB1D07E467E330234B15AA7E /* Pods-Aha_CustomControl_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3C91A6F663D6DC199D7F5329CA990C /* Pods-Aha_CustomControl_Example-dummy.m */; };
+		338253F9A62A2CD3FA0AFCFD5FB5A897 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		341ECD5671756A88389E2CC04A109F96 /* Pods-Aha_CustomControl_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1623C81375EA8D22234DF8EBA80A341C /* Pods-Aha_CustomControl_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48BB620AF405D7B9F577AEE04569BD77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A4DF32DC083331452CE81EF3FAB814BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		CD7302274031E153B54550F49104FB89 /* Pods-Aha_CustomControl_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC9600300E02971D0B637E556E436A0 /* Pods-Aha_CustomControl_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE04774E8EFDEA84E93BD58C39C95F69 /* Aha_CustomControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5088426EB970B6AD9EAA7573C787AE3D /* Aha_CustomControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE0CA56415BB34A496EDF269C51675DE /* Aha_CustomControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC62E7B29A4B59B7A2021A171A89C3AE /* Aha_CustomControl-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		596923BD37E1F80DA0141437E86F899E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AF5B57144042DF2B88CEE1338742AEC;
+			remoteInfo = Aha_CustomControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0045D27D1BD33BAA3DC71E0893C67B68 /* Pods-Aha_CustomControl_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Aha_CustomControl_Tests.modulemap"; sourceTree = "<group>"; };
+		06146623B101C497AC0AF77C6AF4296E /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = Aha_CustomControl/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		1623C81375EA8D22234DF8EBA80A341C /* Pods-Aha_CustomControl_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Aha_CustomControl_Tests-umbrella.h"; sourceTree = "<group>"; };
+		18CF24D1CBBDCF052A68ED32753C28B1 /* Pods-Aha_CustomControl_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Aha_CustomControl_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1A4C8B1FDD4EFE44A368F88F7007FB2F /* Pods-Aha_CustomControl_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Aha_CustomControl_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		1B21A07EAEC8373F5008BBDAE504B262 /* Aha_CustomControl.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Aha_CustomControl.xcconfig; sourceTree = "<group>"; };
+		2AC9600300E02971D0B637E556E436A0 /* Pods-Aha_CustomControl_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Aha_CustomControl_Example-umbrella.h"; sourceTree = "<group>"; };
+		2B29A1A4F204673458D5B510058B0867 /* Pods-Aha_CustomControl_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Aha_CustomControl_Example.release.xcconfig"; sourceTree = "<group>"; };
+		2D5E1C97A89A6E8FABA297D6F0F5FC39 /* Pods-Aha_CustomControl_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Aha_CustomControl_Example-resources.sh"; sourceTree = "<group>"; };
+		2EB25E2193EC371DF16CFFFEE8818038 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47FE6CAD2EEDB70A8759CB998BECAAB1 /* Pods-Aha_CustomControl_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Aha_CustomControl_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4F3C91A6F663D6DC199D7F5329CA990C /* Pods-Aha_CustomControl_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Aha_CustomControl_Example-dummy.m"; sourceTree = "<group>"; };
+		5088426EB970B6AD9EAA7573C787AE3D /* Aha_CustomControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Aha_CustomControl-umbrella.h"; sourceTree = "<group>"; };
+		58DABFB152E30B45212C8C0E9132EE31 /* Pods-Aha_CustomControl_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Aha_CustomControl_Tests-dummy.m"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		71B3B5563A214CF57DDCBD78BCF2693E /* Pods-Aha_CustomControl_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Aha_CustomControl_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		8EB645D62BD86706AB705C0CF2D27CD9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0D32B34E564BD4103EC062EC1E1913B /* Aha_CustomControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Aha_CustomControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7F93414D77B3A3327AF243F4DE0A90F /* Pods-Aha_CustomControl_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Aha_CustomControl_Example-frameworks.sh"; sourceTree = "<group>"; };
+		B0DAEEBBA57EDF79C5B13D4BB8F9D826 /* Pods_Aha_CustomControl_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aha_CustomControl_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1188D94A10C9579156794BD642E4218 /* Aha_CustomControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Aha_CustomControl-prefix.pch"; sourceTree = "<group>"; };
+		B8047AA00BA132E00326998ED6051524 /* Pods-Aha_CustomControl_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Aha_CustomControl_Example.modulemap"; sourceTree = "<group>"; };
+		BBD529C28BFDFEDE510D44B31581968E /* Aha_CustomControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Aha_CustomControl.modulemap; sourceTree = "<group>"; };
+		C36F527095270F30B391CF8983122E64 /* Pods-Aha_CustomControl_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Aha_CustomControl_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CC62E7B29A4B59B7A2021A171A89C3AE /* Aha_CustomControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Aha_CustomControl-dummy.m"; sourceTree = "<group>"; };
+		D0FFA5C4D8BFBE26F157E4E5E2C1AC10 /* Pods-Aha_CustomControl_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Aha_CustomControl_Tests-resources.sh"; sourceTree = "<group>"; };
+		E6EC00D307C8CD2587D4A9AF4FEFF8EE /* Pods-Aha_CustomControl_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Aha_CustomControl_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E92F994257D6762551427BEF4C29C8C4 /* Pods-Aha_CustomControl_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Aha_CustomControl_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F42A327C9102D49F6E9B0E83AE66381C /* Pods-Aha_CustomControl_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Aha_CustomControl_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F9DDE2D81180B1BAB2544CFECBEAAEBD /* Pods_Aha_CustomControl_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aha_CustomControl_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9E640FB5BAC14E275D5B8F399966B04 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08F209DE547AB28DA084E56199B31C3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				338253F9A62A2CD3FA0AFCFD5FB5A897 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4134FE922A5C152F025B3BA214169BD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4DF32DC083331452CE81EF3FAB814BF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3360AA61E702AB78CF0EF3895DFF1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48BB620AF405D7B9F577AEE04569BD77 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12D96F4A4A44074C756CBB5F3BB8836F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BBD529C28BFDFEDE510D44B31581968E /* Aha_CustomControl.modulemap */,
+				1B21A07EAEC8373F5008BBDAE504B262 /* Aha_CustomControl.xcconfig */,
+				CC62E7B29A4B59B7A2021A171A89C3AE /* Aha_CustomControl-dummy.m */,
+				B1188D94A10C9579156794BD642E4218 /* Aha_CustomControl-prefix.pch */,
+				5088426EB970B6AD9EAA7573C787AE3D /* Aha_CustomControl-umbrella.h */,
+				8EB645D62BD86706AB705C0CF2D27CD9 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Aha_CustomControl";
+			sourceTree = "<group>";
+		};
+		23ADDB5BFF9B103599277A9D4F775708 /* Aha_CustomControl */ = {
+			isa = PBXGroup;
+			children = (
+				06146623B101C497AC0AF77C6AF4296E /* ReplaceMe.swift */,
+				12D96F4A4A44074C756CBB5F3BB8836F /* Support Files */,
+			);
+			name = Aha_CustomControl;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		4DC4347D9B5017D9B42ECFC07AC35491 /* Pods-Aha_CustomControl_Example */ = {
+			isa = PBXGroup;
+			children = (
+				2EB25E2193EC371DF16CFFFEE8818038 /* Info.plist */,
+				B8047AA00BA132E00326998ED6051524 /* Pods-Aha_CustomControl_Example.modulemap */,
+				C36F527095270F30B391CF8983122E64 /* Pods-Aha_CustomControl_Example-acknowledgements.markdown */,
+				71B3B5563A214CF57DDCBD78BCF2693E /* Pods-Aha_CustomControl_Example-acknowledgements.plist */,
+				4F3C91A6F663D6DC199D7F5329CA990C /* Pods-Aha_CustomControl_Example-dummy.m */,
+				A7F93414D77B3A3327AF243F4DE0A90F /* Pods-Aha_CustomControl_Example-frameworks.sh */,
+				2D5E1C97A89A6E8FABA297D6F0F5FC39 /* Pods-Aha_CustomControl_Example-resources.sh */,
+				2AC9600300E02971D0B637E556E436A0 /* Pods-Aha_CustomControl_Example-umbrella.h */,
+				E92F994257D6762551427BEF4C29C8C4 /* Pods-Aha_CustomControl_Example.debug.xcconfig */,
+				2B29A1A4F204673458D5B510058B0867 /* Pods-Aha_CustomControl_Example.release.xcconfig */,
+			);
+			name = "Pods-Aha_CustomControl_Example";
+			path = "Target Support Files/Pods-Aha_CustomControl_Example";
+			sourceTree = "<group>";
+		};
+		73BE1A3EC711DDD9816E40FE1A03C0B5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DC4347D9B5017D9B42ECFC07AC35491 /* Pods-Aha_CustomControl_Example */,
+				E0F90637D373D94FD72C06997B9F8086 /* Pods-Aha_CustomControl_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				A08D7D33134BB041C2CB49804D08CF00 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				CD4FF365C4AED5E10D0E71246F51FCF2 /* Products */,
+				73BE1A3EC711DDD9816E40FE1A03C0B5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A08D7D33134BB041C2CB49804D08CF00 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23ADDB5BFF9B103599277A9D4F775708 /* Aha_CustomControl */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD4FF365C4AED5E10D0E71246F51FCF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0D32B34E564BD4103EC062EC1E1913B /* Aha_CustomControl.framework */,
+				F9DDE2D81180B1BAB2544CFECBEAAEBD /* Pods_Aha_CustomControl_Example.framework */,
+				B0DAEEBBA57EDF79C5B13D4BB8F9D826 /* Pods_Aha_CustomControl_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E0F90637D373D94FD72C06997B9F8086 /* Pods-Aha_CustomControl_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F9E640FB5BAC14E275D5B8F399966B04 /* Info.plist */,
+				0045D27D1BD33BAA3DC71E0893C67B68 /* Pods-Aha_CustomControl_Tests.modulemap */,
+				18CF24D1CBBDCF052A68ED32753C28B1 /* Pods-Aha_CustomControl_Tests-acknowledgements.markdown */,
+				F42A327C9102D49F6E9B0E83AE66381C /* Pods-Aha_CustomControl_Tests-acknowledgements.plist */,
+				58DABFB152E30B45212C8C0E9132EE31 /* Pods-Aha_CustomControl_Tests-dummy.m */,
+				1A4C8B1FDD4EFE44A368F88F7007FB2F /* Pods-Aha_CustomControl_Tests-frameworks.sh */,
+				D0FFA5C4D8BFBE26F157E4E5E2C1AC10 /* Pods-Aha_CustomControl_Tests-resources.sh */,
+				1623C81375EA8D22234DF8EBA80A341C /* Pods-Aha_CustomControl_Tests-umbrella.h */,
+				47FE6CAD2EEDB70A8759CB998BECAAB1 /* Pods-Aha_CustomControl_Tests.debug.xcconfig */,
+				E6EC00D307C8CD2587D4A9AF4FEFF8EE /* Pods-Aha_CustomControl_Tests.release.xcconfig */,
+			);
+			name = "Pods-Aha_CustomControl_Tests";
+			path = "Target Support Files/Pods-Aha_CustomControl_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		87636E2B6A4A3D53FACF2C82B23547C1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE04774E8EFDEA84E93BD58C39C95F69 /* Aha_CustomControl-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D187FC828A1452B1C475B85FA3E650BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				341ECD5671756A88389E2CC04A109F96 /* Pods-Aha_CustomControl_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49BD997BD5CB87C43A55C61558578E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD7302274031E153B54550F49104FB89 /* Pods-Aha_CustomControl_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4055E6C885E2D6DB0761C91E93978776 /* Pods-Aha_CustomControl_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D68B702C0C5F2D6E205B6941075C0ECC /* Build configuration list for PBXNativeTarget "Pods-Aha_CustomControl_Example" */;
+			buildPhases = (
+				9BC781E602E6515929150218823BE4C5 /* Sources */,
+				4134FE922A5C152F025B3BA214169BD2 /* Frameworks */,
+				F49BD997BD5CB87C43A55C61558578E0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C46AEFC14DE8368DFF0F330BD12F3CDC /* PBXTargetDependency */,
+			);
+			name = "Pods-Aha_CustomControl_Example";
+			productName = "Pods-Aha_CustomControl_Example";
+			productReference = F9DDE2D81180B1BAB2544CFECBEAAEBD /* Pods_Aha_CustomControl_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4AF5B57144042DF2B88CEE1338742AEC /* Aha_CustomControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B3B7D34B2B13C18561E9612944C9CCD /* Build configuration list for PBXNativeTarget "Aha_CustomControl" */;
+			buildPhases = (
+				7283223AE32CD52C242EAD1B84B07598 /* Sources */,
+				EB3360AA61E702AB78CF0EF3895DFF1C /* Frameworks */,
+				87636E2B6A4A3D53FACF2C82B23547C1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aha_CustomControl;
+			productName = Aha_CustomControl;
+			productReference = A0D32B34E564BD4103EC062EC1E1913B /* Aha_CustomControl.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4C86CE7045FAD3B3A1965C7314803166 /* Pods-Aha_CustomControl_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46F0817800270E0552E6E3CD0734D756 /* Build configuration list for PBXNativeTarget "Pods-Aha_CustomControl_Tests" */;
+			buildPhases = (
+				45317F1D768DBF37870C92AEA1F9F2F0 /* Sources */,
+				08F209DE547AB28DA084E56199B31C3F /* Frameworks */,
+				D187FC828A1452B1C475B85FA3E650BB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Aha_CustomControl_Tests";
+			productName = "Pods-Aha_CustomControl_Tests";
+			productReference = B0DAEEBBA57EDF79C5B13D4BB8F9D826 /* Pods_Aha_CustomControl_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CD4FF365C4AED5E10D0E71246F51FCF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4AF5B57144042DF2B88CEE1338742AEC /* Aha_CustomControl */,
+				4055E6C885E2D6DB0761C91E93978776 /* Pods-Aha_CustomControl_Example */,
+				4C86CE7045FAD3B3A1965C7314803166 /* Pods-Aha_CustomControl_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45317F1D768DBF37870C92AEA1F9F2F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F2984AEACA85F8E3F746C130861AF82 /* Pods-Aha_CustomControl_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7283223AE32CD52C242EAD1B84B07598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE0CA56415BB34A496EDF269C51675DE /* Aha_CustomControl-dummy.m in Sources */,
+				06700C9C645BAC30895E862AD09D68CB /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BC781E602E6515929150218823BE4C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C962D15AB1D07E467E330234B15AA7E /* Pods-Aha_CustomControl_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C46AEFC14DE8368DFF0F330BD12F3CDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Aha_CustomControl;
+			target = 4AF5B57144042DF2B88CEE1338742AEC /* Aha_CustomControl */;
+			targetProxy = 596923BD37E1F80DA0141437E86F899E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		29CDBD63FAA26E9D7787CDD7628A3D17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6EC00D307C8CD2587D4A9AF4FEFF8EE /* Pods-Aha_CustomControl_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Aha_CustomControl_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Aha_CustomControl_Tests/Pods-Aha_CustomControl_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Aha_CustomControl_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		540334AE48DCAD5F066B71215683B947 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B29A1A4F204673458D5B510058B0867 /* Pods-Aha_CustomControl_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Aha_CustomControl_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Aha_CustomControl_Example/Pods-Aha_CustomControl_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Aha_CustomControl_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6E37EBB135DE40CA49F27CB37A5082DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B21A07EAEC8373F5008BBDAE504B262 /* Aha_CustomControl.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Aha_CustomControl/Aha_CustomControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Aha_CustomControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Aha_CustomControl/Aha_CustomControl.modulemap";
+				PRODUCT_NAME = Aha_CustomControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		731DC216E1A58545B559F6E0A2418060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_VERSION = 3.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7B2D6BB172D202786B05FBEE41CCCA05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E92F994257D6762551427BEF4C29C8C4 /* Pods-Aha_CustomControl_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Aha_CustomControl_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Aha_CustomControl_Example/Pods-Aha_CustomControl_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Aha_CustomControl_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BAE2252DF85EFBFF856D48A5F47266FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47FE6CAD2EEDB70A8759CB998BECAAB1 /* Pods-Aha_CustomControl_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Aha_CustomControl_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Aha_CustomControl_Tests/Pods-Aha_CustomControl_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Aha_CustomControl_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DB67C6147500979E741DFE38BC0B1340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B21A07EAEC8373F5008BBDAE504B262 /* Aha_CustomControl.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Aha_CustomControl/Aha_CustomControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Aha_CustomControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Aha_CustomControl/Aha_CustomControl.modulemap";
+				PRODUCT_NAME = Aha_CustomControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */,
+				731DC216E1A58545B559F6E0A2418060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46F0817800270E0552E6E3CD0734D756 /* Build configuration list for PBXNativeTarget "Pods-Aha_CustomControl_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAE2252DF85EFBFF856D48A5F47266FD /* Debug */,
+				29CDBD63FAA26E9D7787CDD7628A3D17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B3B7D34B2B13C18561E9612944C9CCD /* Build configuration list for PBXNativeTarget "Aha_CustomControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB67C6147500979E741DFE38BC0B1340 /* Debug */,
+				6E37EBB135DE40CA49F27CB37A5082DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D68B702C0C5F2D6E205B6941075C0ECC /* Build configuration list for PBXNativeTarget "Pods-Aha_CustomControl_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B2D6BB172D202786B05FBEE41CCCA05 /* Debug */,
+				540334AE48DCAD5F066B71215683B947 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

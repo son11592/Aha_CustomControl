@@ -1,0 +1,22 @@
+{
+  "name": "Aha_CustomControl",
+  "version": "0.1.0",
+  "summary": "A short description of Aha_CustomControl.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/hoangson11592@gmail.com/Aha_CustomControl",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "hoangson11592@gmail.com": "hoangson11592@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/hoangson11592@gmail.com/Aha_CustomControl.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Aha_CustomControl/Classes/**/*"
+}
