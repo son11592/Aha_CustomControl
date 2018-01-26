@@ -257,8 +257,8 @@ public extension String {
     }
 }
 
-public extension UINavigationController {
-    open override var preferredStatusBarStyle: UIStatusBarStyle {
+extension UINavigationController {
+    override open var preferredStatusBarStyle: UIStatusBarStyle {
         if let topController = self.topViewController {
             return topController.preferredStatusBarStyle
         }
@@ -266,8 +266,8 @@ public extension UINavigationController {
     }
 }
 
-public extension SideMenuController {
-    open override var preferredStatusBarStyle: UIStatusBarStyle {
+extension SideMenuController {
+    override open var preferredStatusBarStyle: UIStatusBarStyle {
         if let topController = self.centerViewController {
             return topController.preferredStatusBarStyle
         }
