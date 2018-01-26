@@ -12,14 +12,14 @@ import MapKit
 import SideMenuController
 import DynamicColor
 
-extension Array where Element: Comparable {
-    func containsSameElements(as other: [Element]) -> Bool {
+public extension Array where Element: Comparable {
+    public func containsSameElements(as other: [Element]) -> Bool {
         return self.count == other.count && self.sorted() == other.sorted()
     }
 }
 
-extension Array {
-    var json: String {
+public extension Array {
+    public var json: String {
         let invalidJson = "Not a valid JSON"
         do {
             let jsonData = try JSONSerialization.data(withJSONObject: self, options: .prettyPrinted)
@@ -30,14 +30,14 @@ extension Array {
     }
 }
 
-extension UITableView {
-    func hideEmptyCells() {
+public extension UITableView {
+    public func hideEmptyCells() {
         self.tableFooterView = UIView(frame: .zero)
     }
 }
 
-extension UIButton {
-    func setImageAllStates(image: UIImage?) {
+public extension UIButton {
+    public func setImageAllStates(image: UIImage?) {
         let allStates :[UIControlState] = [.normal, .highlighted, .disabled, .selected]
         
         for state in allStates {
@@ -46,8 +46,8 @@ extension UIButton {
     }
 }
 
-extension UIImage {
-    func cropImage(to cropRect: CGRect) -> UIImage? {
+public extension UIImage {
+    public func cropImage(to cropRect: CGRect) -> UIImage? {
         let rect = CGRect(x: cropRect.origin.x * self.scale, y: cropRect.origin.y * self.scale, width: cropRect.size.width * self.scale, height: cropRect.size.height * self.scale)
         if let imageRef = self.cgImage?.cropping(to: rect) {
             let result = UIImage(cgImage: imageRef, scale: self.scale, orientation: self.imageOrientation)
@@ -58,7 +58,7 @@ extension UIImage {
         }
     }
     
-    func applyColor(color: UIColor) -> UIImage? {
+    public func applyColor(color: UIColor) -> UIImage? {
         // begin a new image context, to draw our colored image onto with the right scale
         UIGraphicsBeginImageContextWithOptions(self.size, false, UIScreen.main.scale)
         // get a reference to that context we created
@@ -89,8 +89,8 @@ extension UIImage {
     }
 }
 
-extension UIView {
-    func takeScreenshot() -> UIImage? {
+public extension UIView {
+    public func takeScreenshot() -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.isOpaque, 0.0)
         self.layer.render(in: UIGraphicsGetCurrentContext()!)
         let img = UIGraphicsGetImageFromCurrentImageContext()
@@ -98,7 +98,7 @@ extension UIView {
         return img
     }
     
-    func applyShadow(scaleSize: CGFloat = 1) {
+    public func applyShadow(scaleSize: CGFloat = 1) {
         self.layer.shadowOffset =  CGSize(width: 1, height: 1) //CGSize.zero
         self.layer.shadowColor = UIColor(red:0.72, green:0.72, blue:0.72, alpha:0.36).cgColor
         self.layer.shadowOpacity = 1
@@ -107,23 +107,22 @@ extension UIView {
         self.layer.rasterizationScale = UIScreen.main.scale
     }
     
-    func applyCorner(scaleSize: CGFloat = 1) {
+    public func applyCorner(scaleSize: CGFloat = 1) {
         self.layer.cornerRadius = 3*scaleSize
     }
     
-    func applyShadowAndCorner(scaleSize: CGFloat = 1) {
+    public func applyShadowAndCorner(scaleSize: CGFloat = 1) {
         applyShadow(scaleSize: scaleSize)
         applyCorner(scaleSize: scaleSize)
     }
     
-    func applyBorder() {
-        
+    public func applyBorder() {
         self.layer.borderColor = UIColor(hexString: "#CCCCCC").cgColor
         self.layer.borderWidth = 1;
     }
     
     @IBInspectable
-    var cornerRadius: CGFloat {
+    public var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
         }
@@ -134,7 +133,7 @@ extension UIView {
     }
     
     @IBInspectable
-    var borderWidth: CGFloat {
+    public var borderWidth: CGFloat {
         get {
             return layer.borderWidth
         }
@@ -144,7 +143,7 @@ extension UIView {
     }
     
     @IBInspectable
-    var borderColor: UIColor? {
+    public var borderColor: UIColor? {
         get {
             let color = UIColor.init(cgColor: layer.borderColor!)
             return color
@@ -179,8 +178,8 @@ public extension MKPolyline {
     }
 }
 
-extension Double {
-    func cleanString(maxDigit: Int) -> String {
+public extension Double {
+    public func cleanString(maxDigit: Int) -> String {
         let formatter = NumberFormatter()
         formatter.minimumFractionDigits = 0
         formatter.maximumFractionDigits = maxDigit
@@ -195,25 +194,25 @@ extension Double {
     }
 }
 
-extension String {
+public extension String {
     
-    var length: Int {
+    public var length: Int {
         return self.count
     }
     
-    subscript (i: Int) -> String {
+    public subscript (i: Int) -> String {
         return self[Range(i ..< i + 1)]
     }
     
-    func substring(from: Int) -> String {
+    public func substring(from: Int) -> String {
         return self[Range(min(from, length) ..< length)]
     }
     
-    func substring(to: Int) -> String {
+    public func substring(to: Int) -> String {
         return self[Range(0 ..< max(0, to))]
     }
     
-    subscript (r: Range<Int>) -> String {
+    public subscript (r: Range<Int>) -> String {
         let range = Range(uncheckedBounds: (lower: max(0, min(length, r.lowerBound)),
                                             upper: min(length, max(0, r.upperBound))))
         let start = index(startIndex, offsetBy: range.lowerBound)
@@ -221,11 +220,11 @@ extension String {
         return self[Range(start ..< end)]
     }
     
-    func nsRange(from range: Range<Index>) -> NSRange {
+    public func nsRange(from range: Range<Index>) -> NSRange {
         return NSRange(range, in: self)
     }
     
-    func nsRange(of subString: String) -> NSRange? {
+    public func nsRange(of subString: String) -> NSRange? {
         if let _range = self.range(of: subString) {
             return self.nsRange(from: _range)
         }
@@ -234,19 +233,19 @@ extension String {
         }
     }
     
-    func capitalizedFirst() -> String {
+    public func capitalizedFirst() -> String {
         let first = self[self.startIndex ..< self.index(startIndex, offsetBy: 1)]
         let rest = self[self.index(startIndex, offsetBy: 1) ..< self.endIndex]
         return first.uppercased() + rest.lowercased()
     }
     
-    func capitalizedFirst(with: Locale?) -> String {
+    public func capitalizedFirst(with: Locale?) -> String {
         let first = self[self.startIndex ..< self.index(startIndex, offsetBy: 1)]
         let rest = self[self.index(startIndex, offsetBy: 1) ..< self.endIndex]
         return first.uppercased(with: with) + rest.lowercased(with: with)
     }
     
-    func jsonToDictionary() -> [String: Any]? {
+    public func jsonToDictionary() -> [String: Any]? {
         if let data = self.data(using: .utf8) {
             do {
                 return try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
@@ -258,7 +257,7 @@ extension String {
     }
 }
 
-extension UINavigationController {
+public extension UINavigationController {
     open override var preferredStatusBarStyle: UIStatusBarStyle {
         if let topController = self.topViewController {
             return topController.preferredStatusBarStyle
@@ -267,7 +266,7 @@ extension UINavigationController {
     }
 }
 
-extension SideMenuController {
+public extension SideMenuController {
     open override var preferredStatusBarStyle: UIStatusBarStyle {
         if let topController = self.centerViewController {
             return topController.preferredStatusBarStyle
@@ -276,8 +275,8 @@ extension SideMenuController {
     }
 }
 
-extension UIViewController {
-    func isDisplay() -> Bool {
+public extension UIViewController {
+    public func isDisplay() -> Bool {
         if self.isViewLoaded && view.window != nil {
             return true
         }
@@ -287,9 +286,9 @@ extension UIViewController {
     }
 }
 
-extension Dictionary {
+public extension Dictionary {
     
-    var json: String {
+    public var json: String {
         let invalidJson = "Not a valid JSON"
         do {
             let jsonData = try JSONSerialization.data(withJSONObject: self, options: .prettyPrinted)
@@ -327,13 +326,13 @@ public extension EnumCollection {
     }
 }
 
-extension DispatchQueue {
+public extension DispatchQueue {
     static var userInteractive: DispatchQueue { return DispatchQueue.global(qos: .userInteractive) }
     static var userInitiated: DispatchQueue { return DispatchQueue.global(qos: .userInitiated) }
     static var utility: DispatchQueue { return DispatchQueue.global(qos: .utility) }
     static var background: DispatchQueue { return DispatchQueue.global(qos: .background) }
 
-    func after(_ delay: TimeInterval, execute closure: @escaping () -> Void) {
+    public func after(_ delay: TimeInterval, execute closure: @escaping () -> Void) {
         asyncAfter(deadline: .now() + delay, execute: closure)
     }
 }
