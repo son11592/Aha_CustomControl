@@ -9,9 +9,9 @@
 import UIKit
 import MaterialTextField
 
-class ScalingTextField: UITextField {
+open class ScalingTextField: UITextField {
     
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         
         for subview in self.subviews {
@@ -24,7 +24,7 @@ class ScalingTextField: UITextField {
         }
     }
 
-    override func clearButtonRect(forBounds bounds: CGRect) -> CGRect {
+    override open func clearButtonRect(forBounds bounds: CGRect) -> CGRect {
         let originalRect = super.clearButtonRect(forBounds: bounds)
         let originSize = originalRect.size
         let scaling = GlobalVariable.instance.scaleHeight*0.9
@@ -34,8 +34,8 @@ class ScalingTextField: UITextField {
 
 }
 
-class ScalingPhoneNumberTextField: PhoneNumberTextField {
-    override func layoutSubviews() {
+open class ScalingPhoneNumberTextField: PhoneNumberTextField {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         
         for subview in self.subviews {
@@ -48,7 +48,7 @@ class ScalingPhoneNumberTextField: PhoneNumberTextField {
         }
     }
     
-    override func clearButtonRect(forBounds bounds: CGRect) -> CGRect {
+    override open func clearButtonRect(forBounds bounds: CGRect) -> CGRect {
         let originalRect = super.clearButtonRect(forBounds: bounds)
         let originSize = originalRect.size
         let scaling = GlobalVariable.instance.scaleHeight*0.9
@@ -57,8 +57,8 @@ class ScalingPhoneNumberTextField: PhoneNumberTextField {
     }
 }
 
-class ScalingMFTextField: MFTextField {
-    override func layoutSubviews() {
+open class ScalingMFTextField: MFTextField {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         
         for subview in self.subviews {
@@ -71,7 +71,7 @@ class ScalingMFTextField: MFTextField {
         }
     }
     
-    override func clearButtonRect(forBounds bounds: CGRect) -> CGRect {
+    override open func clearButtonRect(forBounds bounds: CGRect) -> CGRect {
         let originalRect = super.clearButtonRect(forBounds: bounds)
         let originSize = originalRect.size
         let scaling = GlobalVariable.instance.scaleHeight*0.9

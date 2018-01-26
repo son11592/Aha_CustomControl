@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CustomPhoneNumberTextfield: ScalingMFTextField, UITextFieldDelegate {
+open class CustomPhoneNumberTextfield: ScalingMFTextField, UITextFieldDelegate {
     
     let phoneNumberKit = PhoneNumberKit()
     
