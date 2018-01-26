@@ -1,11 +1,38 @@
 PODS:
   - Aha_CustomControl (0.1.0):
+    - AlamofireImage (~> 3.3.0)
+    - AlamofireObjectMapper (~> 5.0)
+    - AppRouter (~> 4.1.2)
     - DynamicColor (~> 4.0.2)
     - Localize-Swift (~> 2.0.0)
+    - MaterialTextField (~> 0.2.1)
     - NibDesignable (~> 3.0.0)
+    - RxRealm (~> 0.7.5)
+    - SideMenuController (~> 0.2.4)
+  - Alamofire (4.6.0)
+  - AlamofireImage (3.3.0):
+    - Alamofire (~> 4.5)
+  - AlamofireObjectMapper (5.0.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 3.0)
+  - AppRouter (4.1.2):
+    - AppRouter/Core (= 4.1.2)
+  - AppRouter/Core (4.1.2)
   - DynamicColor (4.0.2)
   - Localize-Swift (2.0.0)
+  - MaterialTextField (0.2.1)
   - NibDesignable (3.0.0)
+  - ObjectMapper (3.1.0)
+  - Realm (3.1.0):
+    - Realm/Headers (= 3.1.0)
+  - Realm/Headers (3.1.0)
+  - RealmSwift (3.1.0):
+    - Realm (= 3.1.0)
+  - RxRealm (0.7.5):
+    - RealmSwift (~> 3.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.1)
+  - SideMenuController (0.2.4)
 
 DEPENDENCIES:
   - Aha_CustomControl (from `../`)
@@ -15,10 +42,21 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  Aha_CustomControl: 5f8090cd69a9b94514c88f20a899c9aa08749cb4
+  Aha_CustomControl: 34bf68e533a5d5988c5b944055c6f985ee831a15
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
+  AlamofireObjectMapper: 5fafc816351cbbc0d486611aaeba7461c0cbad49
+  AppRouter: 0ae5dd1e0d37d538891a3298ca267144fcdc0341
   DynamicColor: c7adcfe871781a2b39877a5774e452ba51b79eb3
   Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
+  MaterialTextField: f876a39d571eeece872af6a4da421e3bd065fe0b
   NibDesignable: 6ccf1e54135cb05be0a78f803b9a8d78125a7d6d
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  Realm: 09513d7c054678d65cd02ce09871f805b0d758ac
+  RealmSwift: e868fee9b10e5490ad94b6b6ecd9027944da1824
+  RxRealm: a6c6c0a07cb61f34209969ca6657734edfdfff30
+  RxSwift: c6e3b1c7b325c7d121cd4327e9d98b7ed746b570
+  SideMenuController: b463d2b3aa58e2afe57f57a07938fa9a647894ca
 
 PODFILE CHECKSUM: d02d1342676aebfb85ebcf4c062091ef427ae61e
 

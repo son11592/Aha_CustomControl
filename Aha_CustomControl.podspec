@@ -29,7 +29,7 @@ Need to be shared.
   s.source           = { :git => 'https://github.com/son11592/Aha_CustomControl.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'Aha_CustomControl/Classes/**/*'
   
@@ -43,4 +43,11 @@ Need to be shared.
   s.dependency 'DynamicColor', '~> 4.0.2'
   s.dependency 'NibDesignable', '~> 3.0.0'
   s.dependency 'Localize-Swift', '~> 2.0.0'
+  s.dependency 'AppRouter', '~> 4.1.2'
+  s.dependency 'MaterialTextField', '~> 0.2.1'
+  s.dependency 'RxRealm', '~> 0.7.5'
+  s.dependency 'AlamofireObjectMapper', '~> 5.0'
+  s.dependency 'AlamofireImage', '~> 3.3.0'
+  s.dependency 'SideMenuController', '~> 0.2.4'
+
 end

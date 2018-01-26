@@ -16,7 +16,7 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "source_files": "Aha_CustomControl/Classes/**/*",
   "dependencies": {
@@ -28,6 +28,24 @@
     ],
     "Localize-Swift": [
       "~> 2.0.0"
+    ],
+    "AppRouter": [
+      "~> 4.1.2"
+    ],
+    "MaterialTextField": [
+      "~> 0.2.1"
+    ],
+    "RxRealm": [
+      "~> 0.7.5"
+    ],
+    "AlamofireObjectMapper": [
+      "~> 5.0"
+    ],
+    "AlamofireImage": [
+      "~> 3.3.0"
+    ],
+    "SideMenuController": [
+      "~> 0.2.4"
     ]
   }
 }
