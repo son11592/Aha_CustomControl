@@ -19,12 +19,6 @@
     "ios": "9.0"
   },
   "source_files": "Aha_CustomControl/Classes/**/*",
-  "resources": "Dependencies/GoogleMaps.framework/Resources/GoogleMaps.bundle",
-  "vendored_frameworks": [
-    "Dependencies/GoogleMaps.framework",
-    "Dependencies/GoogleMapsBase.framework",
-    "Dependencies/GoogleMapsCore.framework"
-  ],
   "dependencies": {
     "DynamicColor": [
       "~> 4.0.2"
@@ -70,6 +64,9 @@
     ],
     "HandySwift": [
       "~> 2.4.0"
+    ],
+    "RxRealm": [
+      "~> 0.7.5"
     ]
   }
 }

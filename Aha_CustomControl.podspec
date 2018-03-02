@@ -39,8 +39,8 @@ Need to be shared.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.resource              = 'Dependencies/GoogleMaps.framework/Resources/GoogleMaps.bundle'
-  s.vendored_frameworks   = "Dependencies/GoogleMaps.framework", "Dependencies/GoogleMapsBase.framework", "Dependencies/GoogleMapsCore.framework"
+  # s.resource              = 'Dependencies/GoogleMaps.framework/Resources/GoogleMaps.bundle'
+  # s.vendored_frameworks   = "Dependencies/GoogleMaps.framework", "Dependencies/GoogleMapsBase.framework", "Dependencies/GoogleMapsCore.framework"
   # s.dependency 'AFNetworking', '~> 2.3'
   s.dependency 'DynamicColor', '~> 4.0.2'
   s.dependency 'NibDesignable', '~> 3.0.0'
@@ -57,4 +57,8 @@ Need to be shared.
   s.dependency 'AlamofireNetworkActivityIndicator', '~> 2.0'
   s.dependency 'SwiftDate', '~> 4.3.0' #Swift 3
   s.dependency 'HandySwift', '~> 2.4.0'
+  s.dependency 'RxRealm', '~> 0.7.5'
+  s.dependency 'AlamofireObjectMapper', '~> 5.0'
+  s.dependency 'AlamofireImage', '~> 3.3.0'
+  s.dependency 'SideMenuController', '~> 0.2.4'
 end

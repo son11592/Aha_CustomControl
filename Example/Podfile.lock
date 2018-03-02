@@ -12,6 +12,7 @@ PODS:
     - NibDesignable (~> 3.0.0)
     - Realm (~> 3.0.2)
     - RealmSwift (~> 3.0.2)
+    - RxRealm (~> 0.7.5)
     - SideMenuController (~> 0.2.4)
     - SwiftDate (~> 4.3.0)
     - XLActionController (~> 4.0.0)
@@ -38,6 +39,10 @@ PODS:
   - Realm/Headers (3.0.2)
   - RealmSwift (3.0.2):
     - Realm (= 3.0.2)
+  - RxRealm (0.7.5):
+    - RealmSwift (~> 3.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.2)
   - SideMenuController (0.2.4)
   - SwiftDate (4.3.0)
   - XLActionController (4.0.0):
@@ -52,7 +57,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  Aha_CustomControl: a03f2474beeaecefc30518af111a749764e50582
+  Aha_CustomControl: 91882690b30eb19d5df045496e1c2c80fbfa5268
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
   AlamofireNetworkActivityIndicator: 81e1630e7cfed22a4e4e82a174c59e651dc4f8ca
@@ -67,10 +72,12 @@ SPEC CHECKSUMS:
   ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
   Realm: 6f23fd1f178a09342eac21bfa7c2bf4312a7a180
   RealmSwift: 695393add1b8f9d5fa75dd16e6355cf3935f71e2
+  RxRealm: a6c6c0a07cb61f34209969ca6657734edfdfff30
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
   SideMenuController: b463d2b3aa58e2afe57f57a07938fa9a647894ca
   SwiftDate: 64e2312711c5c506f7b51794308ce91f19eb494a
   XLActionController: 7e88fece1799e61357cb00b1cc67104d66ec4d2c
 
 PODFILE CHECKSUM: d02d1342676aebfb85ebcf4c062091ef427ae61e
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.4.0

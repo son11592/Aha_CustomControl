@@ -13,8 +13,8 @@ extension NSNumber {
     fileprivate var isBool: Bool { return CFBooleanGetTypeID() == CFGetTypeID(self) }
 }
 
-struct CustomURLEncoding: ParameterEncoding {
-    enum Destination {
+public struct CustomURLEncoding: ParameterEncoding {
+    public enum Destination {
         case methodDependent, queryString, httpBody
     }
     

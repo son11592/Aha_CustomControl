@@ -8,8 +8,8 @@
 
 import UIKit
 
-class CustomPhoneNumberTextfield: ScalingMFTextField, UITextFieldDelegate {
-    
+open class CustomPhoneNumberTextfield: ScalingMFTextField, UITextFieldDelegate {
+
     let phoneNumberKit = PhoneNumberKit()
     
     /// Override setText so number will be automatically formatted when setting text by code

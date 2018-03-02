@@ -6,13 +6,13 @@ import RealmSwift
 import ObjectMapper
 //import SwiftyJSON
 
-class ArrayTransform<T:RealmSwift.Object> : TransformType where T:Mappable {
-    typealias Object = List<T>
-    typealias JSON = Array<AnyObject>
+open class ArrayTransform<T:RealmSwift.Object> : TransformType where T:Mappable {
+    public typealias Object = List<T>
+    public typealias JSON = Array<AnyObject>
     
-    let mapper = Mapper<T>()
+    open let mapper = Mapper<T>()
       
-    func transformFromJSON(_ value: Any?) -> List<T>? {
+    open func transformFromJSON(_ value: Any?) -> List<T>? {
         let result = List<T>()
         if let tempArr = value as! Array<Any>? {
             for entry in tempArr {
@@ -37,7 +37,7 @@ class ArrayTransform<T:RealmSwift.Object> : TransformType where T:Mappable {
     
     // transformToJson was replaced with a solution by @zendobk from https://gist.github.com/zendobk/80b16eb74524a1674871
     // to avoid confusing future visitors of this gist. Thanks to @marksbren for pointing this out (see comments of this gist)
-    func transformToJSON(_ value: Object?) -> JSON? {
+    open func transformToJSON(_ value: Object?) -> JSON? {
         var results = [AnyObject]()
         if let value = value {
             for obj in value {
