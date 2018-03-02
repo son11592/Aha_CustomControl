@@ -48,7 +48,7 @@ Need to be shared.
   s.dependency 'AppRouter', '~> 4.1.2'
   s.dependency 'MaterialTextField', '~> 0.2.1'
   s.dependency 'Realm', '~> 3.0.2'
-  s.dependency 'RealmSwift', '~> 3.0.2'
+  s.dependency 'RealmSwift', '~> 3.1.1'
   s.dependency 'AlamofireObjectMapper', '~> 5.0'
   s.dependency 'AlamofireImage', '~> 3.3.0'
   s.dependency 'SideMenuController', '~> 0.2.4'
