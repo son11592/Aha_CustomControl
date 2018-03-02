@@ -1,6 +1,0 @@
-framework module Aha_CustomControl {
-  umbrella header "Aha_CustomControl-umbrella.h"
-
-  export *
-  module * { export * }
-}
