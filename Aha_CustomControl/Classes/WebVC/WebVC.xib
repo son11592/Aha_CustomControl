@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebVC" customModule="AhaFood" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="KAk-yt-iDT" id="WhF-NF-rnZ"/>
+                <outlet property="pageWebView" destination="A8P-wM-s5J" id="C5J-ya-7jx"/>
+                <outlet property="topBarView" destination="zFT-S7-6Cn" id="NVB-OG-hHe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zFT-S7-6Cn" customClass="TopBarView" customModule="AhaFood" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                </view>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A8P-wM-s5J">
+                    <rect key="frame" x="0.0" y="80" width="375" height="587"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="aa7-7y-3wJ"/>
+                    </connections>
+                </webView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="KAk-yt-iDT">
+                    <rect key="frame" x="177" y="363" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="A8P-wM-s5J" secondAttribute="trailing" id="COL-ly-Ix2"/>
+                <constraint firstItem="KAk-yt-iDT" firstAttribute="centerX" secondItem="A8P-wM-s5J" secondAttribute="centerX" id="E0q-5B-HaF"/>
+                <constraint firstItem="zFT-S7-6Cn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GC1-K8-rIN"/>
+                <constraint firstItem="A8P-wM-s5J" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GQY-OI-8ex"/>
+                <constraint firstAttribute="trailing" secondItem="zFT-S7-6Cn" secondAttribute="trailing" id="NH5-9S-wcx"/>
+                <constraint firstAttribute="bottom" secondItem="A8P-wM-s5J" secondAttribute="bottom" id="RRe-xx-Znr"/>
+                <constraint firstItem="A8P-wM-s5J" firstAttribute="top" secondItem="zFT-S7-6Cn" secondAttribute="bottom" id="TEc-2b-YRg"/>
+                <constraint firstItem="KAk-yt-iDT" firstAttribute="centerY" secondItem="A8P-wM-s5J" secondAttribute="centerY" id="ffg-SD-wRg"/>
+                <constraint firstItem="zFT-S7-6Cn" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="80:667" id="mhj-bs-Plj"/>
+                <constraint firstItem="zFT-S7-6Cn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vOP-38-cNs"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "AhamoveStyleKit.h"
+#import "UIImageView+Letters.h"
 
 FOUNDATION_EXPORT double Aha_CustomControlVersionNumber;
 FOUNDATION_EXPORT const unsigned char Aha_CustomControlVersionString[];

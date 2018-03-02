@@ -29,7 +29,7 @@ Need to be shared.
   s.source           = { :git => 'https://github.com/son11592/Aha_CustomControl.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'Aha_CustomControl/Classes/**/*'
   
@@ -39,8 +39,22 @@ Need to be shared.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
+  s.resource              = 'Dependencies/GoogleMaps.framework/Resources/GoogleMaps.bundle'
+  s.vendored_frameworks   = "Dependencies/GoogleMaps.framework", "Dependencies/GoogleMapsBase.framework", "Dependencies/GoogleMapsCore.framework"
   # s.dependency 'AFNetworking', '~> 2.3'
   s.dependency 'DynamicColor', '~> 4.0.2'
   s.dependency 'NibDesignable', '~> 3.0.0'
   s.dependency 'Localize-Swift', '~> 2.0.0'
+  s.dependency 'AppRouter', '~> 4.1.2'
+  s.dependency 'MaterialTextField', '~> 0.2.1'
+  s.dependency 'Realm', '~> 3.0.2'
+  s.dependency 'RealmSwift', '~> 3.0.2'
+  s.dependency 'AlamofireObjectMapper', '~> 5.0'
+  s.dependency 'AlamofireImage', '~> 3.3.0'
+  s.dependency 'SideMenuController', '~> 0.2.4'
+  s.dependency 'XLActionController', '~> 4.0.0'
+  s.dependency 'KeychainAccess', '~> 3.1.0'
+  s.dependency 'AlamofireNetworkActivityIndicator', '~> 2.0'
+  s.dependency 'SwiftDate', '~> 4.3.0' #Swift 3
+  s.dependency 'HandySwift', '~> 2.4.0'
 end
